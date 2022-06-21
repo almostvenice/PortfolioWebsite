@@ -1,0 +1,57 @@
+.introCont{
+    position: absolute;
+    display: flex;
+    color: black;
+    bottom: 33%;
+    width: 75%;
+    height: 50vh;
+    /* background-color: black; */
+  }
+
+  .left-wrapper{
+    padding: 33px;
+  }
+
+  .introGreet{
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .introName{
+    font-size: 60px;
+  }
+
+  .intro-title{
+    height: 60px;
+    width: 235px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+
+  .title-item{
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    color: cyan;
+    display: flex;
+    align-items: center;
+  }
+
+  .title-wrapper{
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+  }
+
+  @keyframes move {
+    33%{
+        transform: translateY(-60px);
+    }
+    66%{
+        transform: translateY(-120px);
+    }
+    100%{
+        transform: translateY(-180px);
+    }
+
+  }
+
