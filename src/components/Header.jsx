@@ -1,6 +1,8 @@
 import {useState } from 'react'
 import {Navbar, Collapse, NavbarToggler, Nav, NavItem} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import { FaCoffee, FaBook, FaProjectDiagram, FaAddressCard } from 'react-icons/fa';
+
 
 
 const Header = () => {
@@ -9,26 +11,26 @@ const Header = () => {
     return (
         <Navbar dark color='primary' sticky='top' expand='md'>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
-            <Collapse>
+            <Collapse isOpen={menuOpen} navbar>
                 <Nav className='ms-auto' navbar>
-                <NavItem>
-                        <NavLink className='nav-link' to='/'>
-                            <i className='fa fa-home fa-lg'/> Home
-                        </NavLink>
-                    </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/directory'>
-                            <i className='fa fa-list fa-lg'/> Directory
+                        <NavLink className='nav-link' to='/'>
+                            <FaCoffee /> Home
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/about'>
-                            <i className='fa fa-info fa-lg'/> About
+                            <FaBook /> About
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className='nav-link' to='/projects'>
+                            <FaProjectDiagram/> Projects
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/contact'>
-                            <i className='fa fa-address-card fa-lg'/> Contact
+                            <FaAddressCard/> Contact
                         </NavLink>
                     </NavItem>
                 </Nav>

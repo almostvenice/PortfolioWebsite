@@ -5,11 +5,20 @@
 
 .bodyCont{
   height: 100vh;
+  background-color: #000000;
 }
 
 
 .navbar-dark {
-  background-image: linear-gradient(to right, #0c0c0c, #27326c, #000000);
+  background-image: linear-gradient(to right, #0c0c0c, #4c4d50, #000000);
   margin-bottom: 2rem;
-  min-height: 8rem;
+  min-height: 6rem;
+}
+
+.introCont{
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 47%;
+  background-color: black;
 }
