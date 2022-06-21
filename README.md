@@ -4,7 +4,7 @@ Portfolio Website project to display projects/skills acquired in Software Develo
 
 
 
-installs:
+# Required:
 
 
 npm install bootstrap
@@ -21,11 +21,11 @@ npm install react-icons --save
 
 
 
-Optional:
+# Optional:
 
 npm i --save @fortawesome/fontawesome-svg-core
 npm i --save @fortawesome/react-fontawesome@latest
-# Free icons styles
+
 npm i --save @fortawesome/free-solid-svg-icons
 npm i --save @fortawesome/free-brands-svg-icons
 
