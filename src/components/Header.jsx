@@ -1,31 +1,41 @@
-import Mountain from '../app/assets/mountain2.png';
-import Hill from '../app/assets/hill2.png';
-import Space from '../app/assets/space.jpg';
-import Hiker from '../app/assets/hiker3.png';
-import { Parallax } from 'react-scroll-parallax';
+import {useState } from 'react'
+import {Navbar, Collapse, NavbarToggler, Nav, NavItem} from 'reactstrap';
+import { NavLink } from 'react-router-dom';
+
 
 const Header = () => {
-    return ( 
-        <div>
-            <img src={Space} alt="" className='background' />
-            
+    const [menuOpen, setMenuOpen] = useState(false);
 
-            <Parallax translateY={[-20, 20]}>
-                <img src={Mountain} alt="" className='middleground' style={{zIndex:1}}/>
-            </Parallax>
+    return (
+        <Navbar dark color='primary' sticky='top' expand='md'>
+            <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
+            <Collapse>
+                <Nav className='ms-auto' navbar>
+                <NavItem>
+                        <NavLink className='nav-link' to='/'>
+                            <i className='fa fa-home fa-lg'/> Home
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className='nav-link' to='/directory'>
+                            <i className='fa fa-list fa-lg'/> Directory
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className='nav-link' to='/about'>
+                            <i className='fa fa-info fa-lg'/> About
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className='nav-link' to='/contact'>
+                            <i className='fa fa-address-card fa-lg'/> Contact
+                        </NavLink>
+                    </NavItem>
+                </Nav>
+            </Collapse>
+        </Navbar>
+        
+    )
+    };
 
-            <Parallax translateY={[-10, 10]}>
-            <img src={Hill} alt="" className='foreground' />
-            </Parallax>
-
-
-            <Parallax translateY={[-3, 3]}>
-            <img src={Hiker} alt="" className='frontground'/>
-            </Parallax>
-
-            <h1 className='title'>Welcome!</h1>
-        </div> 
-    );
-}
- 
 export default Header;
