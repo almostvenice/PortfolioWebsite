@@ -17,7 +17,7 @@
   .slideA{
   position:absolute;
   top:25px;
-  right:15%;
+  right:18rem;
   width:100px;
   height:100px;
   transition-delay: 1s;
@@ -28,16 +28,16 @@
  @keyframes animate{
  
    from{
-   left:0%;
+   left:0rem;
    } 
    to{
-   left:80%;
+   left:94rem;
    }
  } 
  .slideB{
   position:absolute;
   top:25px;
-  right: 10%;
+  right: 12rem;
   width:100px;
   height:100px;
   transition-delay: 1s;
@@ -48,16 +48,16 @@
  @keyframes animateB{
  
    from{
-   left:5%;
+   left:5rem;
    } 
    to{
-   left:85%;
+   left:100.5rem;
    }
  } 
  .slideC{
   position:absolute;
   top:25px;
-  right:5.5%;
+  right:6.5rem;
   width:100px;
   height:100px;
   transition-delay: 1s;
@@ -68,10 +68,10 @@
  @keyframes animateC{
  
    from{
-   left:10%;
+   left:13rem;
    } 
    to{
-   left:90%;
+   left:106rem;
    }
  } 
 
@@ -79,7 +79,7 @@
  .slideD{
   position:absolute;
   top:25px;
-  right:0%;
+  right:0rem;
   width:100px;
   height:100px;
  
@@ -90,30 +90,25 @@
  @keyframes animateD{
  
    from{
-   left:15%;
+   left:15rem;
    } 
    to{
-   left:95%;
+   left:112rem;
    }
  } 
 
 
 
 
-.bob{
-  margin-top: 15%;
-  margin-left: 75%;
-  margin-bottom:2%;
-  border-radius: 50%;
-}
 
-.bob-info {
-  background-color: rgba(0, 0, 0, 0.5);
+.bob-info{
+
  position: absolute ;
  display: inline;
  text-align:justify;
  padding: auto;
- border-radius: 5%;
+
  margin-left: 70%;
  margin-bottom: 25%;
 }
+ 
