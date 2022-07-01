@@ -9,10 +9,22 @@
     left: 60rem;
     
   }
+  @media (max-width:110rem) {
+    .bob-info-2 {
+         visibility: hidden;   
+    }
+    
+}
   
 .bob{
     position: absolute;
     top: 18rem;
     left: 78rem;
     border-radius: 50%;
-  }
+}
+@media (max-width:110rem) {
+    .bob {
+         visibility: hidden;   
+    }
+    
+}

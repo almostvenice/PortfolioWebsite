@@ -26,7 +26,14 @@
  }
  
  @keyframes animate{
- 
+  
+/*    
+    0% {  left: 0; }
+    /* 50% { left: 50%; } */
+   
+    /* 100% { left: 79.5%; } */ 
+  
+  
    from{
    left:0rem;
    } 

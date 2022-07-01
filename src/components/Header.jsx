@@ -12,7 +12,7 @@ const Header = () => {
         <Navbar dark color='primary' fixed='top' expand='md' >
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
           
-            <Collapse isOpen={menuOpen} navbar>
+            <Collapse isOpen={menuOpen} navbar >
                 <Nav className='ms-auto' navbar >
                     <NavItem >
                         <NavLink className='nav-link slideA ' to='/'>
