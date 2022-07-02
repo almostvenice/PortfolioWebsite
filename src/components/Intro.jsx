@@ -1,5 +1,6 @@
 import './intro.css';
 import {Col, Row, Container } from 'reactstrap';
+import NenoImg from '../app/assets/Neno.jpg'
 
 
 
@@ -21,10 +22,25 @@ const Intro = () => {
                     </div>
                 </Col>
                 
+                
+                    <Col sm='2'>
+                    <img className="bob" src={NenoImg}/>
+                </Col>
         
             
-           
-            </Row>
+                <Col sm= '6'>
+                    <div className="bob-info-2">
+                        <h5>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex beatae
+                        magnam sequi corporis labore iusto nesciunt harum assumenda omnis cum
+                        nisi quo temporibus, consequuntur porro distinctio exercitationem
+                        praesentium sit Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                        lsf;sdlfgkf;lkgsddf;lgk'dzf;lkga'dflkga;dflkg';dlfkg'sdf;lkg'sdf;lkg
+                        </h5>
+                    </div>
+                </Col> 
+           </Row>
         </Container>
      );
 }
