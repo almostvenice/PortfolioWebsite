@@ -14,6 +14,8 @@
   margin-bottom: 2rem;
   min-height: 6rem;
 }
+
+@media (min-width: 120rem) {
   .slideA{
   position:absolute;
   top:25px;
@@ -23,16 +25,9 @@
   transition-delay: 1s;
   
   animation:animate 4s;
- }
- 
- @keyframes animate{
+  }
   
-/*    
-    0% {  left: 0; }
-    /* 50% { left: 50%; } */
-   
-    /* 100% { left: 79.5%; } */ 
-  
+  @keyframes animate{
   
    from{
    left:0rem;
@@ -40,8 +35,8 @@
    to{
    left:94rem;
    }
- } 
- .slideB{
+  } 
+  .slideB{
   position:absolute;
   top:25px;
   right: 12rem;
@@ -50,18 +45,18 @@
   transition-delay: 1s;
   
   animation:animateB 3s;
- }
- 
- @keyframes animateB{
- 
+  }
+  
+  @keyframes animateB{
+  
    from{
    left:5rem;
    } 
    to{
    left:100.5rem;
    }
- } 
- .slideC{
+  } 
+  .slideC{
   position:absolute;
   top:25px;
   right:6.5rem;
@@ -70,39 +65,42 @@
   transition-delay: 1s;
   
   animation:animateC 2s;
- }
- 
- @keyframes animateC{
- 
+  }
+  
+  @keyframes animateC{
+  
    from{
    left:13rem;
    } 
    to{
    left:106rem;
    }
- } 
-
- 
- .slideD{
+  } 
+  
+  
+  .slideD{
   position:absolute;
   top:25px;
   right:0rem;
   width:100px;
   height:100px;
- 
+  
   
   animation:animateD 1s;
- }
- 
- @keyframes animateD{
- 
+  }
+  
+  @keyframes animateD{
+  
    from{
    left:15rem;
    } 
    to{
    left:112rem;
    }
- } 
+  } 
+  
+}
+
 
 
 
