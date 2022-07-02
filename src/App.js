@@ -3,6 +3,7 @@ import Header from './components/Header';
 import { Parallax } from 'react-parallax';
 import Laptop from './app/assets/laptop.jpg';
 import Intro from './components/Intro';
+import ProjectsSection from './sections/projects/ProjectsSection';
 
 function App() {
   return (
@@ -15,7 +16,12 @@ function App() {
             <Intro/>
           </div>
         </Parallax>
-        <div className='bodyCont'></div>
+        <div className='bodyCont'>
+
+        </div>
+        <div className="projectsSection">
+          <ProjectsSection/>
+        </div>
     </div>
   );
 }
