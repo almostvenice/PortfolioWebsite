@@ -5,6 +5,7 @@ import { Parallax } from 'react-parallax';
 import Laptop from './app/assets/laptop.jpg';
 import Intro from './components/Intro';
 import ProjectsSection from './sections/projects/ProjectsSection';
+import AboutMe from './sections/about/AboutMe';
 
 function App() {
   const [stylePath] = useState(
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
         <div>
           <link rel="stylesheet" type="text/css" href={stylePath} />
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         </div>
         <Parallax strength={300} bgImage={Laptop} >
           <div className='headerCont'>
@@ -24,7 +26,7 @@ function App() {
           </div>
         </Parallax>
         <div className='bodyCont'>
-          About Me
+          <AboutMe/>
         </div>
         <div className="projectsSection">
           <ProjectsSection/>
