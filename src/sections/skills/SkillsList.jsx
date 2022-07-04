@@ -1,23 +1,52 @@
-import { mySkills } from "../../app/shared/SKILLS";
+import { skillsTree } from "../../app/shared/SKILLS";
 import { Col, Row } from 'reactstrap';
+import { IconContext } from "react-icons";
+import './skills.css';
 
 const SkillsList = () => {
-    const skills = mySkills
+
+    const skillsList = skillsTree.icons.map(skill => {
+        return (
+            <li className="list-inline-item mx-3" key={skill.name}>
+                <span>
+                    <div className="skillsItem text-center rounded">
+                        <button style={{backgroundColor: "white"}}>
+                            <IconContext.Provider value={{ className: "global-class-name", size: '3rem', color: 'darkcyan' }}>
+                                <div>
+                                    {skill.class} 
+                                </div>
+                            </IconContext.Provider>
+
+                        </button>
+                        
+                            {console.log(skill.class)}
+                            <p
+                                className="text-center"
+                                style={{ fontSize: "100%", marginTop: "4px", fontFamily: 'Lobster', color: 'white' }}
+                            >
+                                {skill.name}
+                            </p>
+                    </div>
+                </span>
+            </li>
+        )
+    });
 
     return ( 
-        <Row className="ms-auto border">
-            {skills.map((skill) => {
-                return (
-                    <Col 
-                        md='1'
-                        className="m-2"
-                        key={skill.id}
-                    >
-                        <button className="btn-primary">{skill}</button>
-                    </Col>
-                )
-            })}
-        </Row>
+        <>
+            <Row>
+                <Col md='12' className="text-center">
+                    <div >
+                        <h1 >
+                            <span id="skills" className="text-white">Skills</span>
+                        </h1>
+                    </div>
+                    <div >
+                        <ul className="list-inline mx-auto skill-icon">{skillsList}</ul>
+                    </div>
+                </Col>
+            </Row>
+        </>
      );
 }
  

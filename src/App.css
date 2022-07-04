@@ -6,6 +6,8 @@
 .bodyCont{
   height: 100vh;
   background-color: #000000;
+  color: white;
+  font-size: 4rem;
 }
 
 
@@ -13,4 +15,9 @@
   background-image: linear-gradient(to right, #0c0c0c, #4c4d50, #000000);
   margin-bottom: 2rem;
   min-height: 6rem;
+}
+
+
+.projectsSection{
+  background-color: #1c1c1d;
 }
