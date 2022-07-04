@@ -11,7 +11,7 @@ const SkillsList = () => {
                 <span>
                     <div className="skillsItem text-center rounded">
                         <button className="rounded">
-                            <div style={{backgroundColor: "white", width: '5rem'}}>
+                            <div style={{width: '5rem'}}>
                                 <IconContext.Provider value={{ size: '3rem', color: 'darkcyan' }}>
                                     <div style={{paddingTop: '8px'}}>
                                         {skill.class} 
