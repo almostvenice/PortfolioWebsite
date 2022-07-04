@@ -10,22 +10,24 @@ const SkillsList = () => {
             <li className="list-inline-item mx-3" key={skill.name}>
                 <span>
                     <div className="skillsItem text-center rounded">
-                        <button style={{backgroundColor: "white"}}>
-                            <IconContext.Provider value={{ className: "global-class-name", size: '3rem', color: 'darkcyan' }}>
-                                <div>
-                                    {skill.class} 
-                                </div>
-                            </IconContext.Provider>
+                        <button className="rounded">
+                            <div style={{backgroundColor: "white", width: '5rem'}}>
+                                <IconContext.Provider value={{ size: '3rem', color: 'darkcyan' }}>
+                                    <div style={{paddingTop: '8px'}}>
+                                        {skill.class} 
+                                    </div>
+                                </IconContext.Provider>
+                            </div>
 
-                        </button>
                         
                             {console.log(skill.class)}
                             <p
                                 className="text-center"
-                                style={{ fontSize: "100%", marginTop: "4px", fontFamily: 'Lobster', color: 'white' }}
-                            >
+                                style={{ fontSize: "110%", marginTop: "4px", fontFamily: 'Lobster', color: 'black'}}
+                                >
                                 {skill.name}
                             </p>
+                        </button>
                     </div>
                 </span>
             </li>
