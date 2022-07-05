@@ -39,8 +39,8 @@ const SkillsList = () => {
             <Row>
                 <Col md='12' className="text-center">
                     <div >
-                        <h1 >
-                            <span id="skills" className="text-white">Skills</span>
+                        <h1 style={{marginTop: '18px'}}>
+                            <span id="skills" className="text-white" style={{fontFamily: 'Lobster'}}>Skills</span>
                         </h1>
                     </div>
                     <div >

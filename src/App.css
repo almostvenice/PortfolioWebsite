@@ -4,7 +4,7 @@
 }
 
 .bodyCont{
-  height: 50vh;
+  height: 75vh;
   background-color: #000000;
   color: white;
   font-size: 4rem;
@@ -21,3 +21,4 @@
 .projectsSection{
   background-color: #1c1c1d;
 }
+
