@@ -6,6 +6,7 @@ import Laptop from "./app/assets/laptop.jpg";
 import Intro from "./components/Intro";
 import ProjectsSection from "./sections/projects/ProjectsSection";
 import AboutMe from "./sections/about/AboutMe";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   const [stylePath] = useState("//fonts.googleapis.com/css?family=Lobster");
