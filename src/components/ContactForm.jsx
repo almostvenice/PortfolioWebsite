@@ -2,6 +2,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FormGroup, Label, Input, Button, Form, FormText } from "reactstrap";
+import "./contactForm.css";
 function ContactForm() {
   return (
     <div
@@ -11,8 +12,9 @@ function ContactForm() {
         padding: 30,
       }}
     >
+      <div className="bor">
       <h5 className="text-white">Contact Me For An Interview</h5>
-      <Form>
+      <Form >
         <FormGroup>
           <Label htmlFor="name" className="text-white">
             NAME:
@@ -41,6 +43,7 @@ function ContactForm() {
         </FormGroup>
         <Button>Submit</Button>
       </Form>
+      </div>
     </div>
   );
 }
