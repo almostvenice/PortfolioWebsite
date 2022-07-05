@@ -1,6 +1,6 @@
 import { Row, Col, Container } from 'reactstrap';
-import Hacker from '../../app/assets/hacker.mp4';
 import {Player, Controls} from '@lottiefiles/react-lottie-player';
+import './about.css'
 
 const AboutMe = () => {
     return ( 
