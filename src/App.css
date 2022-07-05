@@ -4,7 +4,7 @@
 }
 
 .bodyCont{
-  height: 50vh;
+  height: 75vh;
   background-color: #000000;
   color: white;
   font-size: 4rem;
@@ -123,4 +123,20 @@
 
 .projectsSection{
   background-color: #1c1c1d;
+}
+
+#aboutMe {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 775px) {
+  #lottiePlayer{
+    position: absolute;
+    display: none;
+  }
+  #aboutMe {
+    position: absolute;
+    text-align: center;
+    font-size: 20px; 
+  }
 }
