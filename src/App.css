@@ -17,89 +17,108 @@
   margin-bottom: 2rem;
   min-height: 6rem;
 }
+@media (min-width: 120rem) {
   .slideA{
   position:absolute;
   top:25px;
-  right:15%;
+  right:18rem;
   width:100px;
   height:100px;
   transition-delay: 1s;
   
   animation:animate 4s;
- }
- 
- @keyframes animate{
- 
+  }
+  
+  @keyframes animate{
+  
    from{
-   left:0%;
+   left:0rem;
    } 
    to{
-   left:80%;
+   left:94rem;
    }
- } 
- .slideB{
+  } 
+  .slideB{
   position:absolute;
   top:25px;
-  right: 10%;
+  right: 12rem;
   width:100px;
   height:100px;
   transition-delay: 1s;
   
   animation:animateB 3s;
- }
- 
- @keyframes animateB{
- 
+  }
+  
+  @keyframes animateB{
+  
    from{
-   left:5%;
+   left:5rem;
    } 
    to{
-   left:85%;
+   left:100.5rem;
    }
- } 
- .slideC{
+  } 
+  .slideC{
   position:absolute;
   top:25px;
-  right:5.5%;
+  right:6.5rem;
   width:100px;
   height:100px;
   transition-delay: 1s;
   
   animation:animateC 2s;
- }
- 
- @keyframes animateC{
- 
+  }
+  
+  @keyframes animateC{
+  
    from{
-   left:10%;
+   left:13rem;
    } 
    to{
-   left:90%;
+   left:106rem;
    }
- } 
-
- 
- .slideD{
+  } 
+  
+  
+  .slideD{
   position:absolute;
   top:25px;
-  right:0%;
+  right:0rem;
   width:100px;
   height:100px;
- 
+  
   
   animation:animateD 1s;
- }
- 
- @keyframes animateD{
- 
+  }
+  
+  @keyframes animateD{
+  
    from{
-   left:15%;
+   left:15rem;
    } 
    to{
-   left:95%;
+   left:112rem;
    }
- } 
+  } 
+  
+}
 
+
+
+
+
+
+.bob-info{
+
+ position: absolute ;
+ display: inline;
+ text-align:justify;
+ padding: auto;
+
+ margin-left: 70%;
+ margin-bottom: 25%;
+}
+ 
 
 
 
