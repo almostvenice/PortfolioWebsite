@@ -1,5 +1,21 @@
 .bor {
-    border: 5px solid cyan;
+    border: 5px solid darkcyan;
     border-radius: 3%;
-    background-color: #00B2B3;
+    background-color: darkcyan;
+    /* margin-left: 33%; */
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 50px;
+}
+
+#contactForm {
+    height: 75vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(9, 9, 9);
+    display: block;
+    text-align: center;
+    
 }

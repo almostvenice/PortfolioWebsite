@@ -29,9 +29,10 @@ function App() {
       </div>
       <div className="projectsSection">
         <ProjectsSection />
+      </div>
+      <div id="contactForm">
         <ContactForm />
       </div>
-      <div></div>
     </div>
   );
 }

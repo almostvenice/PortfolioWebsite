@@ -1,7 +1,7 @@
 const ProjectCard = () => {
     return ( 
         <div>
-            hello
+            <p style={{color: 'red'}}>Project Card</p>
         </div>
      );
 }
