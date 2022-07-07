@@ -19,3 +19,14 @@
     text-align: center;
     
 }
+.rb{
+
+    width: 55%;
+   
+}
+.fb{
+    display: flex;
+   
+    margin-left: 120px;
+    align-items: center;
+}
