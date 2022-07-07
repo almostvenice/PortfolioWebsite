@@ -1,11 +1,19 @@
 import ProjectCard from "./ProjectCard";
-import { Row, Col } from "reactstrap";
+import { Container, Row } from "reactstrap";
+import { PROJECTSLIST } from "../../app/shared/PROJECTSLIST";
 
 const ProjectCardList = () => {
+    const projects = PROJECTSLIST.map(project => {
+        return (
+            <ProjectCard project={project} key={project.id}/>
+        )
+    })
     return ( 
-        <Row>
-            <ProjectCard/>
-        </Row>
+        <Container>
+            <Row>
+                {projects}
+            </Row>
+        </Container>
      );
 }
  
