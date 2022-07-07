@@ -85,13 +85,12 @@
 }
 @media (min-width: 120rem) {
   .slideA{
-  position:absolute;
-  top:25px;
+  position: absolute;
+  top: 10px;
   right:18rem;
   width:100px;
-  height:100px;
+  /* height:100px; */
   transition-delay: 1s;
-  
   animation:animate 4s;
   }
   
@@ -101,15 +100,14 @@
    left:0rem;
    } 
    to{
-   left:94rem;
+   left:94.6rem;
    }
   } 
   .slideB{
-  position:absolute;
-  top:25px;
+  position: absolute;
+  top: 10px;
   right: 12rem;
   width:100px;
-  height:100px;
   transition-delay: 1s;
   
   animation:animateB 3s;
@@ -121,15 +119,14 @@
    left:5rem;
    } 
    to{
-   left:100.5rem;
+   left:100.7rem;
    }
   } 
   .slideC{
-  position:absolute;
-  top:25px;
+  position: absolute;
+  top: 10px;
   right:6.5rem;
   width:100px;
-  height:100px;
   transition-delay: 1s;
   
   animation:animateC 2s;
@@ -141,18 +138,16 @@
    left:13rem;
    } 
    to{
-   left:106rem;
+   left:106.1rem;
    }
   } 
   
   
   .slideD{
-  position:absolute;
-  top:25px;
+  position: absolute;
+  top: 10px;
   right:0rem;
-  width:100px;
-  height:100px;
-  
+  width:100px;  
   
   animation:animateD 1s;
   }
@@ -163,7 +158,7 @@
    left:15rem;
    } 
    to{
-   left:112rem;
+   left:112.5rem;
    }
   } 
   

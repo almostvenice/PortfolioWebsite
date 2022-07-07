@@ -14,8 +14,7 @@
 
 .navbar-dark {
   background-image: linear-gradient(to right, #0c0c0c, #4c4d50, #000000);
-  margin-bottom: 2rem;
-  min-height: 6rem;
+  min-height: 4rem;
 }
 
 .projectsSection{
