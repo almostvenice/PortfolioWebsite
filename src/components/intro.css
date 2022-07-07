@@ -77,13 +77,13 @@
     border-radius: 50%;
     
 }
-@media (max-width:110rem) {
+@media (max-width: 110rem) {
     .bob {
          visibility: hidden;   
     }
     
 }
-@media (min-width: 120rem) {
+@media (min-width: 769px) {
   .slideA{
   position: absolute;
   top: 10px;
