@@ -18,7 +18,7 @@ function App() {
       </div>
       <Parallax strength={300} bgImage={Laptop}>
         <div className="headerCont">
-          <Header />
+          <Header/>
         </div>
         <div className="introCont">
           <Intro />

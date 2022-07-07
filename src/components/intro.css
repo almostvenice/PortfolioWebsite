@@ -96,12 +96,18 @@
   
   @keyframes animate{
   
-   from{
+   /* from{
    left:0rem;
    } 
    to{
-   left:94.6rem;
-   }
+   right:94.6rem;
+   } */
+    0% {
+    transform: translateX(-2000%);
+    }
+    100% {
+        transform: translateX(0);
+    }
   } 
   .slideB{
   position: absolute;
@@ -115,12 +121,12 @@
   
   @keyframes animateB{
   
-   from{
-   left:5rem;
-   } 
-   to{
-   left:100.7rem;
-   }
+    0% {
+      transform: translateX(-2000%);
+      }
+    100% {
+        transform: translateX(0);
+    }
   } 
   .slideC{
   position: absolute;
@@ -134,12 +140,12 @@
   
   @keyframes animateC{
   
-   from{
-   left:13rem;
-   } 
-   to{
-   left:106.1rem;
-   }
+    0% {
+      transform: translateX(-2000%);
+      }
+    100% {
+        transform: translateX(0);
+    }
   } 
   
   
@@ -154,12 +160,12 @@
   
   @keyframes animateD{
   
-   from{
-   left:15rem;
-   } 
-   to{
-   left:112.5rem;
-   }
+    0% {
+      transform: translateX(-2000%);
+      }
+    100% {
+        transform: translateX(0);
+    }
   } 
   
 }
