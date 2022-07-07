@@ -1,7 +1,7 @@
 
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FormGroup, Label, Input, Button, Form, FormText, Row } from "reactstrap";
+import { FormGroup, Label, Input, Button, Form, FormText, Row, Col } from "reactstrap";
 import "./contactForm.css";
 import {Player, Controls} from '@lottiefiles/react-lottie-player';
 function ContactForm() {
@@ -31,7 +31,7 @@ function ContactForm() {
         <Form >
           <FormGroup>
             <Label htmlFor="name" className="text-white">
-              NAME
+              
             </Label>
             <Input
               name="name"
@@ -42,7 +42,7 @@ function ContactForm() {
           </FormGroup>
           <FormGroup>
             <Label htmlFor="emailField" className="text-white">
-              EMAIL
+             
             </Label>
             <Input
               type="email"
@@ -52,11 +52,14 @@ function ContactForm() {
             />
           </FormGroup>
           <FormGroup>
-            <Label htmlFor="message" className="text-white">Message:</Label>
+            <Label htmlFor="message" className="text-white"></Label>
             <Input type="textarea" name="text" id="message" rows="5" cols='40' placeholder="Tell Me About The Opportunity" />
           </FormGroup>
-         
-          <Button style={{float: 'right', }}>Submit</Button>
+         <Row className="rb">
+          
+          <Button className="fb" style={{ }}>Submit</Button>
+        
+          </Row>
         </Form>
       </div>
   );
