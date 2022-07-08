@@ -1,6 +1,7 @@
 import ProjectCard from "./ProjectCard";
-import { Container, Row } from "reactstrap";
+import { Container, Row, Col, CardDeck } from "reactstrap";
 import { PROJECTSLIST } from "../../app/shared/PROJECTSLIST";
+import './projects.css'
 
 const ProjectCardList = () => {
     const projects = PROJECTSLIST.map(project => {
@@ -10,7 +11,7 @@ const ProjectCardList = () => {
     })
     return ( 
         <Container>
-            <Row>
+            <Row style={{justifyContent: 'center'}}> 
                 {projects}
             </Row>
         </Container>
