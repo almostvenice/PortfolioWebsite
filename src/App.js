@@ -18,17 +18,17 @@ function App() {
       </div>
       <Parallax strength={300} bgImage={Laptop}>
         <div className="headerCont">
-          <Header/>
+          <Header />
         </div>
-        <div className="introCont">
+        <div className="introCont" id="home">
           <Intro />
         </div>
       </Parallax>
       <div className="bodyCont">
-        <AboutMe />
+        <AboutMe id="about" />
       </div>
       <div className="projectsSection">
-        <ProjectsSection />
+        <ProjectsSection title="projects" id="projects" />
       </div>
       <div id="contactForm">
         <ContactForm />

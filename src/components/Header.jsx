@@ -2,11 +2,13 @@ import {useState } from 'react'
 import {Navbar, Collapse, NavbarToggler, Nav, NavItem,Row} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { FaCoffee, FaBook, FaProjectDiagram, FaAddressCard } from 'react-icons/fa';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+ 
 
     return (
         <Navbar dark color='primary' fixed='top' expand='md' >
@@ -14,15 +16,15 @@ const Header = () => {
           
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className='ms-auto' navbar >
-                    <NavItem >
+                    <NavItem id='home'>
                         <NavLink className='nav-link slideA ' to='/'>
                             <FaCoffee /> Home
                         </NavLink>
                     </NavItem>
-                    <NavItem>
-                        <NavLink className='nav-link slideB' to='/about'>
+                     <NavItem >
+                     <AnchorLink href='#about'>   <NavLink className='nav-link slideB' to='/about'>
                             <FaBook /> About
-                        </NavLink>
+                        </NavLink></AnchorLink>
                     </NavItem>
                     <NavItem >
                         <NavLink className='nav-link slideC' to='/projects'>
