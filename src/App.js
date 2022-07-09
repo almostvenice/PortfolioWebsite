@@ -7,6 +7,7 @@ import Intro from "./components/Intro";
 import ProjectsSection from "./sections/projects/ProjectsSection";
 import AboutMe from "./sections/about/AboutMe";
 import ContactForm from "./components/ContactForm.jsx";
+import Footer from "./components/Footer"
 
 function App() {
   const [stylePath] = useState("//fonts.googleapis.com/css?family=Lobster");
@@ -33,6 +34,7 @@ function App() {
       <div id="contactForm">
         <ContactForm />
       </div>
+      <Footer/>
     </div>
   );
 }

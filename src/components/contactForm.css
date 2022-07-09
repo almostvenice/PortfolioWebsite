@@ -6,26 +6,23 @@
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    margin-top: 50px;
+    height: 500px;
+    
 }
 
 #contactForm {
-    height: 75vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     background-color: rgb(9, 9, 9);
     display: block;
-    text-align: center;
     
 }
-.rb{
 
-    width: 55%;
-   
-}
-.fb{
-    display: flex;
-   
-    margin-left: 120px;
-    align-items: center;
+@media only screen and (max-width: 775px){
+    
+    .bor{
+        height: 400px;
+    }
 }

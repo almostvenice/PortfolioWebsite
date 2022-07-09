@@ -1,13 +1,24 @@
-import { skillsTree } from "../../app/shared/SKILLS";
+import { SKILLS } from "../../app/shared/SKILLS";
 import { Col, Row } from 'reactstrap';
 import { IconContext } from "react-icons";
 import './skills.css';
+import { useState } from "react";
 
-const SkillsList = () => {
+const SkillsList = ({onItemSelect}) => {
+    const [selectedSkill, setSelectedSkill] = useState();
 
-    const skillsList = skillsTree.icons.map(skill => {
+
+    const handleSkillChange = event => {
+        setSelectedSkill(event.target.skill);
+      }
+
+    const skillsList = SKILLS.map(skill => {
         return (
-            <li className="list-inline-item mx-3" key={skill.name}>
+            <li 
+                key={skill.name}
+                className="list-inline-item mx-3"
+                onClick={() => handleSkillChange(onItemSelect)}
+            >
                 <span>
                     <div className="skillsItem text-center rounded">
                         <button className="rounded">

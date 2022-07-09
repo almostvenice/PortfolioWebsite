@@ -6,7 +6,7 @@ export const PROJECTSLIST = [
         id: 0,
         name: 'Project 1',
         image: hiker,
-        skill: 'React, JSX, CSS',
+        skill: 'React',
         description:
             'First Project'
     },
@@ -14,7 +14,7 @@ export const PROJECTSLIST = [
         id: 1,
         name: 'Project 2',
         image: hill,
-        skill: 'React, JSX, CSS',
+        skill: 'CSS 3',
         description:
             'Second Project'
     },
@@ -30,7 +30,7 @@ export const PROJECTSLIST = [
         id: 3,
         name: 'Project 4',
         image: hill,
-        skill: 'CSS',
+        skill: 'JavaScript',
         description:
             'Fourth Project'
     },
@@ -38,7 +38,7 @@ export const PROJECTSLIST = [
         id: 4,
         name: 'Project 5',
         image: hiker,
-        skill: 'JSX',
+        skill: 'TypeScript',
         description:
             'Fifth Project'
     },
@@ -54,7 +54,7 @@ export const PROJECTSLIST = [
         id: 6,
         name: 'Project 7',
         image: hiker,
-        skill: 'CSS',
+        skill: 'Bootstrap',
         description:
             'Seventh Project'
     },
@@ -62,7 +62,7 @@ export const PROJECTSLIST = [
         id: 7,
         name: 'Project 8',
         image: hill,
-        skill: 'CSS',
+        skill: 'MySql',
         description:
             'Eigth Project'
     },

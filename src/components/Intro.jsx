@@ -26,8 +26,8 @@ const Intro = () => {
             </Row>
             <Row >
             
-           <Col sm='8'>
-                  <div className='bob-info-2 '><h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex beatae magnam sequi corporis labore iusto nesciunt harum assumenda omnis cum nisi quo temporibus, consequuntur porro distinctio exercitationem praesentium sit Lorem ipsum dolor sit amet consectetur, adipisicing elit. lsf;sdlfgkf;lkgsddf;lgk'dzf;lkga'dflkga;dflkg';dlfkg'sdf;lkg'sdf;lkg</h5></div>
+           <Col sm='4'>
+                  <div className='bob-info-2 '><h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex beatae magnam sequi corporis labore iusto nesciunt harum assumenda omnis cum nisi quo temporibus, consequuntur porro distinctio exercitationem praesentium sit Lorem ipsum dolor sit amet consectetur, adipisicing elit. </h5></div>
             </Col>
             </Row>
         </Container>
