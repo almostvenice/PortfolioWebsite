@@ -1,8 +1,9 @@
 import {useState } from 'react'
 import {Navbar, Collapse, NavbarToggler, Nav, NavItem,Row} from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { FaCoffee, FaBook, FaProjectDiagram, FaAddressCard } from 'react-icons/fa';
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import {HashLink as Link} from 'react-router-hash-link';
+import './Header.css'
 
 
 
@@ -11,35 +12,39 @@ const Header = () => {
  
 
     return (
+        
+       <BrowserRouter>
+     
         <Navbar dark color='primary' fixed='top' expand='md' >
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
           
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className='ms-auto' navbar >
-                    <NavItem id='home'>
-                        <NavLink className='nav-link slideA ' to='/'>
-                            <FaCoffee /> Home
-                        </NavLink>
+                    <NavItem>
+                        <Link className='nav-link slideA ' to='#home' >
+                           <FaCoffee /> Home
+                        </Link>
                     </NavItem>
                      <NavItem >
-                     <AnchorLink href='#about'>   <NavLink className='nav-link slideB' to='/about'>
-                            <FaBook /> About
-                        </NavLink></AnchorLink>
+                     <Link className='nav-link slideB' to='#about'>
+                     <FaBook /> About
+                        </Link>
                     </NavItem>
                     <NavItem >
-                        <NavLink className='nav-link slideC' to='/projects'>
+                        <Link className='nav-link slideC smooth' to='#projects'>
                             <FaProjectDiagram /> Projects
-                        </NavLink>
+                        </Link>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link slideD' to='/contact'>
+                        <Link className='nav-link slideD' to='#contactForm'>
                             <FaAddressCard/> Contact
-                        </NavLink>
+                        </Link>
                     </NavItem>                 
                 </Nav>
             </Collapse>
         </Navbar>
-        
+        </BrowserRouter>
+    
     )
     };
 

@@ -7,7 +7,7 @@ import Intro from "./components/Intro";
 import ProjectsSection from "./sections/projects/ProjectsSection";
 import AboutMe from "./sections/about/AboutMe";
 import ContactForm from "./components/ContactForm.jsx";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 
 function App() {
   const [stylePath] = useState("//fonts.googleapis.com/css?family=Lobster");
@@ -25,16 +25,18 @@ function App() {
           <Intro />
         </div>
       </Parallax>
-      <div className="bodyCont">
-        <AboutMe id="about" />
+      <div>
+        <div className="bodyCont" id="about">
+          <AboutMe />
+        </div>
       </div>
-      <div className="projectsSection">
-        <ProjectsSection title="projects" id="projects" />
+      <div className="projectsSection" id="projects">
+        <ProjectsSection title="projects" />
       </div>
       <div id="contactForm">
         <ContactForm />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
